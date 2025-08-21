@@ -1,0 +1,28 @@
+{
+    "name": "alex-kassel/laravel-package-template",
+    "description": "A template Laravel package with all loads, merges, and publishes.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Kassel",
+            "email": "your-email@example.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "AlexKassel\\PackageTemplate\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AlexKassel\\PackageTemplate\\Providers\\PackageTemplateServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^12.0"
+    }
+}
