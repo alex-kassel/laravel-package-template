@@ -12,7 +12,7 @@ class PackageTemplateServiceProvider extends ServiceProvider
     public function boot(): void
     {
         // Load routes
-        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
+        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
         
         // Load and publish views
         $this->loadViewsFrom(__DIR__.'/../../resources/views', 'package-template');
